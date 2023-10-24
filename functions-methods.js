@@ -9,8 +9,8 @@
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
 function getEmailDomain(emailAddress) {
-    const apestaartje = emailAddress.lastIndexOf("@")
-    return url = emailAddress.substring(apestaartje + 1)
+    const apenstaartje = emailAddress.lastIndexOf("@")
+    return emailAddress.substring(apenstaartje + 1)
 
 }
 
@@ -26,6 +26,22 @@ console.log(getEmailDomain("a.wiersma@outlook.com"))
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
+function typeOfEmail(emailAddress) {
+
+    if (emailAddress.includes("novi-education.nl")) {
+        return "Student"
+    } else if (emailAddress.includes("novi.nl")) {
+        return "Medewerker"
+    } else {
+        return "Extern"
+    }
+
+}
+
+console.log(typeOfEmail("n.eeken@novi-education.nl"))
+console.log(typeOfEmail("t.mellink@novi.nl"))
+console.log(typeOfEmail("novi.nlaapjesk@outlook.com"))
+console.log(typeOfEmail("a.wiersma@outlook.com"))
 
 /* Opdracht  3 */
 // Schrijf een functie genaamd checkEmailValidity, die een emailadres verwacht en checkt of het emailadres valide is. De functie returned true of false, afhankelijk van de uitkomst.
