@@ -4,6 +4,7 @@
 
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
+
 /* Opdracht  1: Cum Laude */
 
 /* 1a: Script schrijven  */
@@ -13,6 +14,10 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // * Hoe zorg ik ervoor dat dit ook werkt wanneer de array 100 entries bevat?
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
 // Log het antwoord in de terminal.
+for (let i = 0; i < grades.length; i++) {
+
+
+}
 
 // ---- Verwachte uitkomst: 6
 
@@ -26,8 +31,6 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // cumLaude(grades) geeft 6
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
-
-
 
 
 /* Opdracht  2: Gemiddeld cijfer */
@@ -57,8 +60,6 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
-
-
 
 
 /* Bonusopdracht: hoogste cijfer */
