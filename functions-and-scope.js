@@ -26,7 +26,7 @@ function cumLaude(grade) {
             amount = amount + 1
         }
     }
-    // console.log(amount)
+    // console.log(amount);
 }
 
 cumLaude(grades)
@@ -56,13 +56,15 @@ cumLaude([8, 9, 4, 6, 10])
 
 // ---- Verwachte uitkomst: 6.642857142857143
 function averageGrade(grade) {
-    let average = 0
+    let sum = 0;
+    let average
     for (let i = 0; i < grade.length; i++) {
-        average += grade[i]
-
+        sum += grade[i]
+        average = sum / grade.length
+        average = average.toFixed(2)
     }
 
-    console.log(average / grade.length)
+    console.log(average);
 }
 
 
