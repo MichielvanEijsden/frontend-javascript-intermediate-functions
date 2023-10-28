@@ -65,15 +65,15 @@ function checkEmailValidity(email) {
 
     const emailAdd = email.includes("@")
     const emailDot = email.includes(".")
-    const wrongDot = (email.lastIndexOf() === ".")
+    const wrongDot = email.charAt(email.length - 1) !== "."
     const emailComma = email.includes(",")
-    console.log(emailAdd, emailDot, wrongDot, emailComma)
+    // console.log(emailAdd, emailDot, wrongDot, emailComma)
 
-    // if (emailAdd && emailDot) {
-    //     return true
-    // } else {
-    //     return false
-    // }
+    if (emailAdd && emailDot && wrongDot) {
+        return true
+    } else {
+        return false
+    }
 
 
 }

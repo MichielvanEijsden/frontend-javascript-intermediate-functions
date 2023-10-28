@@ -4,8 +4,23 @@
 
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
-let cumLaude = grades
+let amount
 
+function countCumLaude(grade) {
+    for (let i = 0; i < grade.length; i++) {
+        if (grade[i] >= 8) {
+
+            // console.log(grade[i])
+            amount = grade[i]
+            console.log(amount[grade])
+
+        }
+
+    }
+}
+
+
+countCumLaude(grades)
 /* Opdracht  1: Cum Laude */
 
 /* 1a: Script schrijven  */
@@ -16,12 +31,7 @@ let cumLaude = grades
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
 // Log het antwoord in de terminal.
 
-for (let i = 0; i < grades.length; i++) {
-    if (grades[i] >= 8)
-        grades[i] = grades[i]
-    cumLaude = grades[i]
-}
-console.log(cumLaude)
+
 // ---- Verwachte uitkomst: 6
 
 
