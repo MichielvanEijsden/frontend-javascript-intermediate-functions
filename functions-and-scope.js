@@ -4,22 +4,7 @@
 
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
-let amount
 
-function countCumLaude(grade) {
-    for (let i = 0; i < grade.length; i++) {
-        if (grade[i] >= 8) {
-
-            // console.log(grade[i])
-            amount = grade[i]
-            console.log(amount[grade])
-
-        }
-    }
-}
-
-
-countCumLaude(grades)
 /* Opdracht  1: Cum Laude */
 
 /* 1a: Script schrijven  */
@@ -33,6 +18,20 @@ countCumLaude(grades)
 
 // ---- Verwachte uitkomst: 6
 
+function cumLaude(grade) {
+    let amount = 0;
+    for (let i = 0; i < grade.length; i++) {
+
+        if (grade[i] >= 8) {
+            amount = amount + 1
+        }
+    }
+    console.log(amount)
+}
+
+cumLaude(grades)
+cumLaude([6, 4, 5])
+cumLaude([8, 9, 4, 6, 10])
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
