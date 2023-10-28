@@ -15,7 +15,6 @@ function countCumLaude(grade) {
             console.log(amount[grade])
 
         }
-
     }
 }
 
