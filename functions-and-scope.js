@@ -26,7 +26,7 @@ function cumLaude(grade) {
             amount = amount + 1
         }
     }
-    console.log(amount)
+    // console.log(amount)
 }
 
 cumLaude(grades)
@@ -55,8 +55,20 @@ cumLaude([8, 9, 4, 6, 10])
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6.642857142857143
+function averageGrade(grade) {
+    let average = 0
+    for (let i = 0; i < grade.length; i++) {
+        average += grade[i]
+
+    }
+
+    console.log(average / grade.length)
+}
 
 
+averageGrade(grades)
+averageGrade([6, 4, 5])
+averageGrade([8, 9, 4, 6, 10])
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
 // Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
